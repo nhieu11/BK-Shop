@@ -2,7 +2,8 @@
     bottom: 0;
     height: 250px;
     width: 100%;
-    background: rgba(196, 196, 196, 0.67);
+    background: rgba(210, 210, 210);
+    position: sticky;
 }
 
 .footer .main-footer .customer-service .main-title {
