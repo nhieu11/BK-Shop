@@ -1,0 +1,78 @@
+@import url('../Color.css');
+
+/* Phần Menu  */
+.menu {
+    width: 220px;
+    height: calc(100vh - 49px);
+    border-right: 1px solid var(--color-hightlight);
+    transition: 0.3s all ease-in-out;
+}
+
+/* Thu nhỏ Menu */
+.menu--shrink {
+    width: 64px;
+}
+    /* Menu Item */
+    .menu .menu__item {
+        height: 44px;
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .menu__item--shrink {
+        justify-content: space-evenly;
+    }
+
+    .menu .menu__item:hover {
+        background-color: var(--color-secondary);
+        color: var(--color-black);
+    }
+
+    .menu .menu__item--active {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+
+    .menu .menu__item--active:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+
+        .menu .menu__item .menu__icon {
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .menu__icon--shrink {
+            margin-right: 0 !important;
+        }
+
+/* Phần icon thuộc menu */
+.-dashboard {
+    background-image: url('../../../content/icon/dashboard.png');
+}
+
+.-report {
+    background-image: url('../../../content/icon/report.png');
+}
+
+.-employee {
+    background-image: url('../../../content/icon/dic-employee.png');
+}
+
+.-report {
+    background-image: url('../../../content/icon/report.png');
+}
+
+.-setting {
+    background-image: url('../../../content/icon/setting.png');
+}

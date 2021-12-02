@@ -1,0 +1,97 @@
+/* Combobox */
+.combobox{
+    position: relative;
+    align-items: center;
+    margin: 0 12px;
+}
+    /* Input part */
+    .combobox .combobox__input{
+        height: 40px;
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        min-width: 75px;
+        outline: none;
+        font-family: GoogleSans-Regular;
+        padding: 0 0 0 16px;
+    }
+
+        .combobox .combobox__input::placeholder{
+            font-size: 11px;
+            color: #bbb;
+        }
+        /* Những sự kiện khi input được focus */
+        .combobox .combobox__input:focus{
+            font-size: 13px;
+            color: #000;
+            outline: none;
+            border: 1px solid #019160;
+        }
+
+            .combobox .combobox__input:focus+.combobox__button>.icon{
+                transform: rotate(180deg);
+            }
+
+            .combobox .combobox__input:focus+.combobox__btn{
+                background-color: #e5e5e5;
+            }
+
+            .combobox .combobox__input:focus::placeholder{
+                color: transparent;
+            }
+
+    /* Button Part */
+    .combobox .combobox__button{
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #bbb;
+        border-radius: 0 4px 4px 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+        .combobox .combobox__button:hover{
+            background-color: #E9EBEE;
+            outline: none;
+        }
+        .combobox .combobox__button:focus{
+            background-color: #e5e5e5;
+            outline: none;
+        }
+
+
+        .combobox .combobox__button:focus>.icon {
+            transform: rotate(180deg);
+        }
+
+    /* Data Part */
+    .combobox .combobox__data{
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        padding: 4px 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        z-index: 999;
+    }
+
+        .combobox .combobox__data .combobox__item {
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+
+        .combobox .combobox__data .combobox__item .icon {
+            padding: 0 10px;
+            color: #fff;
+        }
+
+        .combobox .combobox__data .combobox__item:hover {
+            background: #e9ebee;
+            cursor: pointer;
+        }
+
+        .combobox .combobox__data .combobox__item:hover {
+			background-color: var(--color-secondary-hover);
+			color: var(--color-content-text);
+		}

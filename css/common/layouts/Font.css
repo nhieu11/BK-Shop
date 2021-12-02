@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('../../../content/font/GoogleSans-Regular.otf');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Bold';
+    src: url('../../../content/font/GoogleSans-Bold.otf');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Italic';
+    src: url('../../../content/font/GoogleSans-Italic.otf');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Light';
+    src: url('../../../content/font/GoogleSans-Light.otf');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Medium';
+    src: url('../../../content/font/GoogleSans-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../content/font/Roboto/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../content/font/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('../../../content/font/Roboto/Roboto-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../../../content/font/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../content/font/Roboto/Roboto-Medium.ttf');
+}

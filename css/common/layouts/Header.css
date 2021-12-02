@@ -1,0 +1,85 @@
+@import url('../Color.css');
+
+/* Phần Header  */
+.header {
+    height: 80px;
+    padding: 15px 40px;
+}
+
+.header .header-logo {
+    height: 50px;
+    width: 70px;
+    background-image: url('../../../content/img/logo.png');
+    background-size: contain;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+}
+
+/* Phần Main Header */
+
+.header .main-header {}
+
+.header .main-header .category-title {
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Phần Header Setting */
+
+.header .header-setting {}
+
+.header .header-setting .setting-menu {}
+
+.header .header-setting .setting-menu .setting-title {
+    text-transform: capitalize;
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+
+.header .header-setting .setting-menu .user-ava {
+    height: 20px;
+    width: 20px;
+    background-image: url('../../../content/img/profile.png');
+    background-size: contain;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+
+}
+
+.header .header-setting .search-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+}
+
+.header .header-setting .search-menu .shopping-cart {
+    height: 32px;
+    width: 32px;
+    background-image: url('../../../content/icon/shopping-cart.png');
+    background-size: contain;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+}
+
+.header .header-setting .search-menu input {
+    width: 258px;
+    height: 32px;
+
+    background: rgba(196, 196, 196, 0.38);
+    outline: none;
+    border: none;
+    padding: 0 33px 0 10px;
+}
+
+.header .header-setting .search-menu>.icon-default {
+    position: absolute;
+    top: 18px;
+    right: 72px;
+}

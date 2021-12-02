@@ -1,0 +1,58 @@
+@import url('../Color.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: GoogleSans-Regular;
+    font-size: 13px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.rotate180 {
+    transform: rotateZ(180deg);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-secondary);
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-hightlight);
+    border-radius: 16px;
+}

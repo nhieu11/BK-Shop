@@ -1,0 +1,19 @@
+
+@import url("../common/layouts/Main.css");
+@import url("../common/layouts/Footer.css");
+@import url("../common/layouts/Font.css");
+@import url("../common/layouts/Position.css");
+@import url("../common/layouts/Header.css");
+@import url("../common/layouts/Menu.css");
+@import url("../common/layouts/Content.css");
+@import url("../common/components/Table.css");
+@import url("../common/components/Pagination.css");
+@import url("../common/components/Modal.css");
+@import url("../common/components/Popup.css");
+@import url("../common/components/FieldInput.css");
+@import url("../common/components/Dropdown.css");
+@import url("../common/components/Combobox.css");
+@import url("../common/components/Alert.css");
+@import url("../common/components/Button.css");
+@import url("../common/components/Icon.css");
+@import url("../page/Employee.css");

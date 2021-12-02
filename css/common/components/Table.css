@@ -1,0 +1,136 @@
+@import url('../Color.css');
+
+/* Data Table */
+.content__table-container {
+    width: 100%;
+    margin-top: 16px;
+    overflow: auto;
+}
+
+    .content__table {
+        width: 100%;
+        min-width: 1366px;
+        text-align: left;
+        font-weight: normal;
+        position: relative;
+        border-collapse: collapse;
+    }
+
+    /* Table Header */
+    .content__table .table__header th {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: var(--color-white);
+        z-index: 6;
+    }
+
+    .content__table tr {
+        height: 40px;
+        border-bottom: 1px solid var(--color-hightlight);
+    }
+
+    /* Table Body */
+    .content__table tbody tr {
+        cursor: pointer;
+    }
+
+    .content__table tbody tr:hover {
+        background-color: var(--color-secondary-hover);
+    }
+
+    /* Check Box */
+    .content__table tbody .delete-box {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 0.1px solid var(--color-hightlight);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+    }
+
+        .content__table tbody .delete-box input {
+            position: absolute;
+            opacity: 0;
+            width: 24px;
+            height: 24px;
+            margin: 0;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        .content__table tbody .delete-box .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 24px;
+            width: 24px;
+            background-color: var(--color-secondary-hover);
+        }
+
+        .content__table tbody .delete-box:hover input ~ .checkmark {
+            background-color: var(--color-hightlight);
+        }
+
+        .content__table tbody .delete-box input:checked ~ .checkmark {
+            background-color: var(--color-primary);
+        }
+
+        .content__table tbody .delete-box .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .content__table tbody .delete-box input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        .content__table tbody .delete-box .checkmark:after {
+            left: 8px;
+            top: 3px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+
+    /* Căn chỉnh table size */
+    .content__table td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 24px;
+    }
+
+    .content__table td:nth-child() {
+        min-width: 100px;
+        max-width: 150px;
+    }
+
+    .content__table td:first-child {
+        padding-left: 25px;
+    }
+
+
+    .content__table td:nth-child(10),
+    .content__table th:nth-child(10) {
+        text-align: right;
+        padding-right: 16px;
+    }
+
+    .content__table tr:nth-child(odd) {
+        background-color: rgba(229, 229, 229, 0.5);
+    }
+

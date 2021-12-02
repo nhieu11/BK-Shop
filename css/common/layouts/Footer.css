@@ -1,0 +1,33 @@
+.footer {
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+    background: rgba(196, 196, 196, 0.67);
+}
+
+.footer .main-footer .customer-service .main-title {
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
+    padding: 19px 0 19px;
+}
+
+.footer .main-footer .customer-service .detail-content {
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    padding-bottom: 10px;
+}
+
+.footer .main-footer .customer-service .detail-content:hover {
+    color: #FFA500;
+    cursor: pointer;
+}

@@ -1,0 +1,155 @@
+/* Popup whole screen */
+.modal__container {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+    /* Popup Main Content */
+    .modal__container .modal {
+        position: relative;
+        margin: auto;
+        width: 45%;
+        padding: 24px 24px 0!important;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+        /* Popup Header */
+        .modal__container .modal .modal__header {
+            display: flex;
+            /* height: 15px; */
+        }
+
+            .modal__container .modal .modal__header .modal__name {
+                font-size: 23px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            .modal__container .modal .modal__header .modal__button-close {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+        /* Popup SideBar */
+        .modal__container .modal .modal__sidebar {
+            float: left;
+            width: 200px;
+        }
+
+            .modal__container .modal .modal__sidebar .modal__avatar-holder {
+                background-image: url('../../../content/img/blank-avatar.png');
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: contain;
+                margin-top: 24px;
+                width: 100%;
+                height: 200px;
+            }
+
+            .modal__container .modal .modal__sidebar span {
+                display: block;
+                text-align: center;
+            }
+
+        /* Popup Detail Content */
+        .modal__container .modal .modal__content {
+            display: flex;
+            padding-left: 10px;
+        }
+
+            .modal__container .modal .modal__content .modal__general-info {
+                margin-top: 24px;
+                width: 100%;
+            }
+            
+                .modal__container .modal .modal__content .modal__general-info .info-title {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin: 10px 0 0;
+                }
+
+                    .modal__container .modal .modal__content .modal__general-info .info-title .title-layout {
+                        background-color: #019160;
+                        height: 4px;
+                        width: 85px;
+                        margin-top: 8px;
+                    }
+                .modal__container .modal .modal__content .modal__general-info .info-row {
+                    display: flex;
+                    gap: 10px;
+                    width: 100%;
+                }
+
+                    .modal__container .modal .modal__content .modal__general-info .info-row .info-column {
+                        width: 50%;
+                        margin: 5px 0 16px;
+                        position: relative;
+                    }
+                        .modal__container .modal .modal__content .modal__general-info .info-row .info-column span{
+                            font-family: GoogleSans-Medium;
+                        }
+
+                        .modal__container .modal .modal__content .modal__general-info .info-row .info-column input {
+                            margin: 4px 0 0;
+                            width: 100%;
+                        }
+
+        /* Popup footer */
+        .modal__container .modal__foot {
+            position: relative;
+            display: flex;
+            margin: 0 -24px;
+            justify-content: flex-end;
+            background-color: #bbb;
+            height: 60px;
+            margin: -24px;
+            margin-top: 24px;
+            width: auto;
+            border-radius: 0 0 5px 5px;
+        }
+
+
+/* Responsive (for laptop screen only) */
+@media only screen and (max-width: 1600px) {
+    .modal__container .modal {
+        width: 60%;
+    }
+  }
+
+/* Animation for nodal popup*/
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}

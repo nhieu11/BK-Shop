@@ -1,0 +1,68 @@
+@import url('../Color.css');
+
+
+/* Field Input */
+.modal__field-input {
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    font-family: GoogleSans-Regular;
+    height: 40px;
+}
+
+    .modal__field-input::placeholder {
+        font-size: 12px;
+        color: #bbb;
+    }
+
+    .modal__field-input:focus {
+        font-size: 13px;
+        color: #000;
+        outline: none;
+        border: 1px solid #019160;
+
+    }
+
+    .modal__field-input:focus::placeholder {
+        color: transparent;
+    }
+
+
+
+
+/* Field Input có icon đứng trước text */
+.field-input--icon{
+    height: 40px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid var(--color-hightlight);
+	padding: 0 16px;
+	outline: none;
+	display: inline-block;
+	transition: 0.2s all ease-in-out;
+}
+
+
+.field-input--icon:focus {
+	border-color: var(--color-primary);
+}
+
+/* Field Input có label bên trên input */
+.field-input-label {
+    margin-top: 4px;
+    padding: 0 0 0 16px;
+}
+
+    .field-input-label::placeholder {
+        font-size: 11px;
+    }
+
+
+/* Field Input khi nhập sai */
+.error-input {
+    border: 1px solid #FF4747;
+}
+
+/* Đánh dấu đỏ những trường bắt buộc */
+.required-input {
+    color: red;
+}

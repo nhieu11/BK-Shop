@@ -1,0 +1,79 @@
+@import url('../Color.css');
+
+/* Content: Nơi chứa table dữ liệu và các filter */
+.content {
+    width: calc(100% - 221px);
+	height: calc(100% - 49px);
+	position: absolute;
+	top: 49px;
+	left: 221px;
+	padding: 16px;
+	transition: 0.2s all ease-in-out;
+}
+/* Mở rộng khi Menu thu nhỏ */
+.content--extend {
+	width: calc(100% - 64px);
+	left: 64px;
+}
+    /* Phần Header của Content */
+    .content .content__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content .content__header .header__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .content .content__header .button__container #button__delete-employee {
+        background-color: var(--color-alert);
+        display: none;
+    }
+
+    .content .content__header .button__container {
+        display: flex;
+        gap: 16px;
+    }
+    
+
+    /* Phần Filter của Content */
+    .content .content__filter {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content .content__filter .content__filter--left {
+        display: flex;
+        align-content: center;
+    }
+
+    .content .content__filter .content__filter--left .field-input--icon {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0;
+        border: none;
+    }
+    
+    .content .content__filter .content__filter--left .field-input--icon input {
+        height: 40px;
+        width: 100%;
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid var(--color-hightlight);
+        padding-left: 40px;
+    }
+
+    .content .content__filter .content__filter--left .field-input--icon > .icon-default{
+        position: absolute;
+        top: 12px;
+        left: 16px;
+    }
+    
+    .content .content__filter .content__filter--left .dropdown {
+        margin: 0 12px;
+    }
